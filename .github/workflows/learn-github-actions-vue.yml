@@ -8,6 +8,9 @@ jobs:
     name: Build and deploy gh-pages
     env:
       MY_SECRET: ${{ secrets.COMMIT_SECRET }}
+      USER_NAME: wowdacom
+      USER_EMAIL: wowdacom@gmail.com
+      PUBLISH_DIR: ./dist
     runs-on: ubuntu-latest
     strategy:
       matrix:
