@@ -15,6 +15,8 @@ jobs:
       - run: cd dist
       - run: ls
       - run: git init
+      - run: git config user.name "wowdacom"
+      - run: git config user.email "wowdacom@gmail.com"
       - run: git add -A
       - run: git commit -m "deploy"
       - run: git push -f git@github.com:wowdacom/GitHub-Actions-Demo-Vue.git main:gh-pages
