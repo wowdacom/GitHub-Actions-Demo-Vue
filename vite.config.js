@@ -7,7 +7,8 @@ const version = +new Date();
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV !== "production" ? "./" : "/curious-mind-site/",
+  base:
+    process.env.NODE_ENV !== "production" ? "./" : "/GitHub-Actions-Demo-Vue/",
   plugins: [vue()],
   resolve: {
     alias: {
