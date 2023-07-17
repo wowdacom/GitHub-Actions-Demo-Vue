@@ -15,7 +15,7 @@ jobs:
       - run: cd dist
       - run: ls
       - run: git init
-      - run: add -A
+      - run: git add -A
       - run: git commit -m "deploy"
       - run: git push -f git@github.com:wowdacom/GitHub-Actions-Demo-Vue.git main:gh-pages
       - run: rm -r dist
